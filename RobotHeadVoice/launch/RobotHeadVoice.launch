@@ -1,0 +1,17 @@
+<launch>
+    <include
+        file="$(find sound_play)/soundplay_node.launch"/>
+    <!--<arg
+        name="introduce"
+        default="$(find RobotHeadVoice)/assets/RobotHeadVoice/introduce.wav"/>
+    <arg
+        name="funny_words"
+        default="$(find RobotHeadVoice)/assets/RobotHeadVoice/funny_words.xml"/>
+    <arg
+        name="strong_words"
+        default="$(find RobotHeadVoice)/assets/RobotHeadVoice/strong_words.xml"/>-->
+
+    <node 
+        pkg="RobotHeadVoice" type="RobotHeadVoice" name="RobotHeadVoice"/>
+        
+</launch>

@@ -1,0 +1,12 @@
+Step 1. Copy RobotHeadVoice and sound_play folder to catkin_ws/src.
+
+Step 2. Copy sounds file (.wav or .ogg files) and paste to RobotHeadVoice/assets/. Modify name 		of file for speaking in RobotHeadVoice.cpp.
+
+Step 3. Run node by command:
+	$ catkin_make
+	$ source devel/setup.bash
+	$ roslaunch RobotHeadVoice RobotHeadVoice.launch
+
+Step 4. Publish a message by integer in ROS to play sound files.
+	Topic to publish is /UXA90_Voice
+
